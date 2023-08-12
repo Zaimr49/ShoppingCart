@@ -1,0 +1,20 @@
+.col-3{
+    /* border: 1px solid yellowgreen; */
+    padding: 0;
+}
+
+.heading{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+.custom-btn{
+    background-color: white;
+    border-radius: 0;
+    border: 1px solid black;
+    color: black;
+}
