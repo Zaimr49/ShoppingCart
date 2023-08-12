@@ -1,20 +1,107 @@
-.col-3{
-    /* border: 1px solid yellowgreen; */
-    padding: 0;
+.col-3 {
+  /* border: 1px solid yellowgreen; */
+  padding: 0;
 }
 
-.heading{
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 30px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 600;
+.heading {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+.card {
+  border: 0;
+  transition: border-color 0.3s;
+  border-radius: 0;
+}
+.card:hover {
+  border: 1px solid gray;
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
+  padding: 0;
+  width: 100%;
 }
 
-.custom-btn{
-    background-color: white;
-    border-radius: 0;
-    border: 1px solid black;
-    color: black;
+.custom-btn {
+  background-color: white;
+  border-radius: 0;
+  border: 1px solid black;
+  color: black;
+  width: 40%;
+  height: 30px;
+  font-size: 10px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+.custom-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.shopping-bag {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: flex-end;
+  /* padding-top: ; */
+}
+.shopping-bag .fa {
+  font-size: 30px;
+  margin-right: 10px;
+  /* border: 1px solid yellowgreen; */
+  padding: 10px;
+}
+
+.shopping-bag .fa:hover {
+  cursor: pointer;
+}
+
+body {
+  padding-bottom: 100px;
+}
+.cart-container {
+  display: flex;
+  justify-content: center;
+}
+
+.cart {
+  display: none; /* Hide initially */
+  position: fixed;
+  top: 30px;
+  background-color: rgb(123, 123, 123); /* Semi-transparent black overlay */
+  color: white;
+  padding: 20px;
+  display: none;
+  z-index: 9999; /* Higher value to ensure it overlays other content */
+  width: 70%;
+  height: 400px;
+  border-radius: 3px;
+}
+
+.background-elements {
+  transition: opacity 0.3s;
+}
+
+.dimmed {
+  opacity: 0.5; /* Adjust the opacity value as needed */
+}
+
+
+#total-price-container{
+  position: absolute;
+  bottom: 20px;
+}
+
+.cart-buttons{
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+#clear-cart-btn{
+  margin-right: 10px;
 }
